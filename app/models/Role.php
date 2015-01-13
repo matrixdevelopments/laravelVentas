@@ -3,9 +3,9 @@
 class Role extends Eloquent
 {
 
-    protected $fillable = ['name', 'detail'];
+    protected $fillable = array('name', 'detail');
 
-    public function user()
+    public function users()
     {
         return $this->belongsToMany('User');
     }

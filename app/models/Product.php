@@ -3,7 +3,7 @@
 class Product extends Eloquent
 {
 
-    protected $fillable = ['codigo', 'marca', 'modelo', 'cantidad'];
+    protected $fillable = array('codigo', 'marca', 'modelo', 'cantidad');
 
     public function detail()
     {

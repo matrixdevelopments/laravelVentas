@@ -3,7 +3,7 @@
 class Invoice extends Eloquent
 {
 
-    protected $fillable = ['user_id', 'products', 'nombre'];
+    protected $fillable = array('user_id', 'products', 'nombre');
 
     public function user()
     {
