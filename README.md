@@ -12,7 +12,8 @@ Descargamos el zip o clonamos el repositorio, nos dirigimos a la carpeta raíz d
 
 `php artisan db:seed` Con este comando rellenamos nuestras tablas
 
-Si usan PHPStorm,Netbeans o Eclipse 
+Si usan PHPStorm,Netbeans o Eclipse:
+
 `php artisan ide-helper:generate`
 
 Es importante recordar que el proyecto se encuentra en desarrollo y utiliza varias librerías que solo son útiles en esta etapa del proyecto
