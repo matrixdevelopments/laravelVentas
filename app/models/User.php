@@ -5,6 +5,13 @@ use Illuminate\Auth\Reminders\RemindableTrait;
 use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\UserTrait;
 
+/**
+ * User
+ *
+ * @property-write mixed $password 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Role[] $roles 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Invoice[] $invoices 
+ */
 class User extends Eloquent implements UserInterface, RemindableInterface
 {
 
@@ -19,7 +26,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface
 		$this->attributes['password'] = Hash::make($value);
 	}
 
-	public function role()
+	public function roles()
 	{
 		return $this->belongsToMany('Role');
 	}

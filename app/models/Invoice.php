@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Invoice
+ *
+ * @property-read \User $user 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Products[] $products 
+ */
 class Invoice extends Eloquent
 {
 

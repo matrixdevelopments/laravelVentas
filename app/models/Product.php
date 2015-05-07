@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Product
+ *
+ */
 class Product extends Eloquent
 {
 

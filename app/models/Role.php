@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Role
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection|\User[] $users 
+ */
 class Role extends Eloquent
 {
 
