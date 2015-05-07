@@ -6,29 +6,27 @@ use Illuminate\Database\Schema\Blueprint;
 class CreateTableRoles extends Migration
 {
 
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create('roles', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name')->unique();
-            $table->text('detail')->nullable();
-            $table->timestamps();
-        });
-    }
+	/**
+	 * Run the migrations.
+	 * @return void
+	 */
+	public function up()
+	{
+		Schema::create('roles', function (Blueprint $table)
+		{
+			$table->increments('id');
+			$table->string('name')->unique();
+			$table->text('detail')->nullable();
+			$table->timestamps();
+		});
+	}
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::drop('roles');
-    }
-
+	/**
+	 * Reverse the migrations.
+	 * @return void
+	 */
+	public function down()
+	{
+		Schema::drop('roles');
+	}
 }

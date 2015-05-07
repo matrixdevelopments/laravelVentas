@@ -13,8 +13,7 @@ return array(
 	|
 	*/
 
-	'paths' => array(__DIR__.'/../views'),
-
+	'paths' => array(__DIR__ . '/../views'),
 	/*
 	|--------------------------------------------------------------------------
 	| Pagination View

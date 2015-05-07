@@ -18,13 +18,11 @@ return array(
 		'domain' => '',
 		'secret' => '',
 	),
-
 	'mandrill' => array(
 		'secret' => '',
 	),
-
 	'stripe' => array(
-		'model'  => 'User',
+		'model' => 'User',
 		'secret' => '',
 	),
 

@@ -1,10 +1,10 @@
 <?php
 
-class ExampleTest extends TestCase {
+class ExampleTest extends TestCase
+{
 
 	/**
 	 * A basic functional test example.
-	 *
 	 * @return void
 	 */
 	public function testBasicExample()
@@ -13,5 +13,4 @@ class ExampleTest extends TestCase {
 
 		$this->assertTrue($this->client->getResponse()->isOk());
 	}
-
 }

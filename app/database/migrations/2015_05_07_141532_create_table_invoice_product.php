@@ -1,18 +1,18 @@
 <?php
 
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
 
-class CreateTableInvoiceProduct extends Migration {
+class CreateTableInvoiceProduct extends Migration
+{
 
 	/**
 	 * Run the migrations.
-	 *
 	 * @return void
 	 */
 	public function up()
 	{
-		Schema::create('"invoice_product"', function(Blueprint $table)
+		Schema::create('"invoice_product"', function (Blueprint $table)
 		{
 			$table->increments('id');
 			$table->timestamps();
@@ -21,12 +21,10 @@ class CreateTableInvoiceProduct extends Migration {
 
 	/**
 	 * Reverse the migrations.
-	 *
 	 * @return void
 	 */
 	public function down()
 	{
 		Schema::drop('"invoice_product"');
 	}
-
 }
