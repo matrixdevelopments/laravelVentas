@@ -3,3 +3,4 @@
 vendor
 bootstrap/compiled.php
 _ide_helper.php
+app/config/database.php
