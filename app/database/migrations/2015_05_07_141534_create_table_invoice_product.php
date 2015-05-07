@@ -12,10 +12,11 @@ class CreateTableInvoiceProduct extends Migration
 	 */
 	public function up()
 	{
-		Schema::create('"invoice_product"', function (Blueprint $table)
+		Schema::create('invoice_product', function (Blueprint $table)
 		{
-			$table->increments('id');
-			$table->timestamps();
+			$table->integer('invoice_id');
+			$table->integer('product_id');
+			$table->integer('product_amount')->default(1);
 		});
 	}
 
